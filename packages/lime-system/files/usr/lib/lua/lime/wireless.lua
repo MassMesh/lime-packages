@@ -81,12 +81,12 @@ function wireless.configure()
 	for _,radio in pairs(allRadios) do
 		local radioName = radio[".name"]
 		local specRadio = specificRadios[radioName]
-		local modes = config.get("wifi", "modes")
+		local modes = config.get("wifi", "modes", {})
 		local options = config.get_all("wifi")
 
 		if specRadio then
 			modes = specRadio["modes"]
-			utils.arrayConcat(options, specRadio)
+			options = utils.tableMelt(options, specRadio)
 		end
 
 		--! If manual mode is used toghether with other modes it results in an

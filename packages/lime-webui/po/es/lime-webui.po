@@ -1,117 +1,297 @@
+# Translation of LibreMesh - Web UI to Spanish (español)
+# Exported from translatewiki.net
+#
+# Author: Fitoschido
+# Author: Giudicejesica
+# Author: Modante
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr ""
+""
+"Content-Type: text/plain; charset=UTF-8\n"
+"PO-Revision-Date: 2018-05-21 14:11:09+0000\n"
+"X-POT-Import-Date: 2018-05-16 10:46:37+0000\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"X-Generator: MediaWiki 1.32.0-alpha; Translate 2018-04-10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#
+msgid "(%s available)"
+msgstr "(%<span class=\"notranslate\">s</span> Disponible)"
+
+#
 msgid "About"
-msgstr "Sobre"
+msgstr "Acerca de"
 
+#
 msgid "Access Point ESSID (usually name of your network)"
 msgstr "ESSID del punto de acceso (normalmente nombre de la red)"
 
+#
 msgid "Advanced"
 msgstr "Avanzado"
 
+#
+msgid "Attended Sysupgrade"
+msgstr "Actualización de sistema asistida"
+
+#
+msgid "Cancel"
+msgstr "Cancelar"
+
+#
+msgid "Changes applied."
+msgstr "Se aplicaron los cambios."
+
+#
 msgid "Channel 2.4 GHz"
 msgstr "Canal 2.4GHz"
 
+#
 msgid "Channel 5 GHz"
 msgstr "Canal 5GHz"
 
+#
+msgid "Checksum"
+msgstr "Secuencia de comprobación del archivo imagen (checksum)"
+
+#
 msgid "Community name"
 msgstr "Nombre de la comunidad"
 
+#
 msgid "Contact"
 msgstr "Contacto"
 
+#
 msgid "Contact information"
 msgstr "Información de contacto"
 
+#
 msgid "Country code"
 msgstr "Código del país"
 
+#
 msgid "Country code used for WiFi radios"
 msgstr "Código del país usado para las radios WiFi"
 
-msgid "Distance"
-msgstr "Distancia"
-
-msgid "Max distance for the links in meters (big impact on performance)"
-msgstr "Distancia m�xima de los enlaces WiFi en metros (impacto importante)"
-
+#
 msgid "Default channel used for 2.4 GHz radios"
 msgstr "Canal por defecto usado para las radios de 2.4GHz"
 
+#
 msgid "Default channel used for 5 GHz radios"
 msgstr "Canal por defecto usado para las radios de 5GHz"
 
-msgid "Email"
-msgstr "Correo"
+#
+msgid "Distance"
+msgstr "Distancia"
 
+#
+msgid "Email"
+msgstr "Correo electrónico"
+
+#
+msgid "Flash Firmware"
+msgstr "Instalar sistema (firmware)"
+
+#
+msgid "Flash image..."
+msgstr "Grabar imagen…"
+
+#
+msgid "Flash new firmware image"
+msgstr "Grabar imagen de firmware nueva"
+
+#
+msgid "Flash operations"
+msgstr "Operaciones de grabación"
+
+#
+msgid "Flashing..."
+msgstr "Grabando la imagen…"
+
+#
 msgid "General"
 msgstr "General"
 
+#
 msgid "Hostname"
 msgstr "Nombre de la máquina"
 
+#
+msgid "Image"
+msgstr "Imagen"
+
+#
+msgid "Internet Priorized Gateway (bmx6)"
+msgstr "Puerta de salida prioritaria para Internet (bmx6)"
+
+#
+msgid "It appears that you are trying to flash an image that does not fit into the flash memory, please verify the image file!"
+msgstr "Parece que estás intentando grabar una imagen que no cabe en la memoria flash, por favor, verificar el archivo imagen a grabar!"
+
+#
+msgid "Keep settings"
+msgstr "Mantener la configuración"
+
+#
 msgid "Latitude"
 msgstr "Latitud"
 
+#
 msgid "Latitude (this can be also configured in location tab)"
 msgstr "Latitud (puede ser configurada también en la sección Localización)"
 
-msgid "Location"
-msgstr "Localización"
+#
+msgid "Loading"
+msgstr "Cargando"
 
+#
+msgid "Location"
+msgstr "Ubicación"
+
+#
 msgid "Logout"
 msgstr "Salir"
 
+#
 msgid "Longitude"
 msgstr "Longitud"
 
+#
 msgid "Longitude (this can be also configured in location tab)"
 msgstr "Longitud (puede ser configurada también en la sección Localización)"
 
+#
+msgid "MD5"
+msgstr "MD5"
+
+#
 msgid "Main IPv4"
 msgstr "Dirección principal IPv4"
 
+#
 msgid "Main IPv6"
 msgstr "Dirección principal IPv6"
 
+#
 msgid "Map location"
 msgstr "Localización en mapa"
 
+#
+msgid "Max distance for the links in meters (big impact on performance)"
+msgstr "Distancia máxima de los enlaces WiFi en metros (impacto importante en el rendimiento)"
+
+#
 msgid "Mesh BSSID"
 msgstr "BSSID de la Mesh"
 
+#
 msgid "Name"
 msgstr "Nombre"
 
+#
 msgid "Name for this node"
 msgstr "Nombre para este nodo"
 
+#
 msgid "Network SSID"
 msgstr "SSID de la red"
 
+#
+msgid "Notes"
+msgstr "Notas"
+
+#
+msgid "Notes that will be shown on console login and will be at hand here."
+msgstr "Notas que serán mostradas en la autentificación de la consola y estarán a mano aquí."
+
+#
+msgid "Proceed"
+msgstr "Continuar"
+
+#
+msgid "Rebooting..."
+msgstr "Reiniciando…"
+
+#
+msgid "SHA256"
+msgstr "SHA256"
+
+#
 msgid "Simple Config"
 msgstr "Configuración simple"
 
+#
+msgid "Size"
+msgstr "Tamaño"
+
+#
+msgid "Sorry, there is no sysupgrade support present; a new firmware image must be flashed manually. Please refer to the wiki for device specific install instructions."
+msgstr "Lo sentimos, no hay asistente de sysupgrade; el nuevo firmware debe ser grabado manualmente. Por favor, consulte las instrucciones de la wiki para instalar un dispositivo específico."
+
+#
+msgid "System"
+msgstr "Sistema"
+
+#
+msgid "System Notes"
+msgstr "Notas del sistema"
+
+#
 msgid "The BSSID (WiFi network identifier) used for the mesh network"
 msgstr "El BSSID (identificador de la red WiFi) usado para la mesh"
 
-msgid ""
-"The main IPv4 configured for this node, with slash notation (for ex. "
-"1.2.3.4/24)"
+#
+msgid "The flash image was uploaded. Below is the checksum and file size listed, compare them with the original file to ensure data integrity.<br /> Click \"Proceed\" below to start the flash procedure."
+msgstr "La imagen se ha cargado en la memoria flash. Abajo encontrará el checksum y la medida del archivo, compárelo con el archivo original para asegurar la integridad del mismo.<br/> Presione \"Avanzar\" para empezar con el procedimiento de instalación."
+
+#
+msgid "The main IPv4 configured for this node, with slash notation (for ex. 1.2.3.4/24)"
 msgstr "La IPv4 principal para este nodo, con notación de barra (p.e 1.2.3.4/24)"
 
-msgid ""
-"The main IPv6 configured for this node, with slash notation (for ex. 2001:"
-"db8::1/64)"
+#
+msgid "The main IPv6 configured for this node, with slash notation (for ex. 2001:db8::1/64)"
 msgstr "La IPv6 principal para este nodo, con notación de barra (p.e 2001:db8::1/64)"
 
+#
 msgid "The name of your network community"
 msgstr "Nombre para la red comunitaria"
 
+#
+msgid "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a few minutes before you try to reconnect. It might be necessary to renew the address of your computer to reach the device again, depending on your settings."
+msgstr "Se está instalando la imagen del sistema.<br />NO DEBE APAGARSE EL DISPOSITIVO.<br />Hay que esperar algunos minutos antes de intentar realizar una conexión. Puede que sea necesario renovar la dirección del equipo para que alcance el dispositivo de nuevo, en función de la configuración."
+
+#
+msgid "The uploaded image file does not contain a supported format. Make sure that you choose the generic image format for your platform."
+msgstr "El archivo cargado no contiene un formato soportado. Asegúrese de haber escogido el formato de imagen genérico para su plataforma."
+
+#
+msgid "Upload a LibreMesh sysupgrade image here to replace the running firmware."
+msgstr "Cargar una imagen de actualización de LibreMesh aquí para reemplazar el firmware actual."
+
+#
+msgid "Upload a sysupgrade-compatible image here to replace the running firmware. Check \"Keep settings\" to retain the current configuration (requires a compatible firmware image)."
+msgstr "Cargar aquí una imagen de actualización de sistema (sysupgrade) compatible para reemplazar el actual. Seleccione \"Mantener configuración\" para reproducir la configuración actual (requiere una imagen-firmware compatible)."
+
+#
+msgid "Verify"
+msgstr "Verificar"
+
+#
+msgid "Waiting for changes to be applied..."
+msgstr "Esperando a que se apliquen los cambios…"
+
+#
+msgid "You can choose a Gateway to priorize your traffic to go through this node."
+msgstr "Es posible seleccionar una puerta de enlace para priorizar el tráfico haciendo que pase por este nodo."
+
+#
 msgid "Your email (not required)"
 msgstr "Tu correo electrónico (no obligatorio)"
 
+#
 msgid "Your name or alias (not required)"
 msgstr "Tu nombre o alias (no obligatorio)"
+

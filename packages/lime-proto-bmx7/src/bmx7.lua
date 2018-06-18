@@ -48,9 +48,15 @@ function bmx7.configure(args)
 	uci:set(bmx7.f, "config", "plugin", "bmx7_config.so")
 
 	-- Enable JSON plugin to get bmx7 information in json format
-	if utils.is_installed("bmx7-sms") then
+	if utils.is_installed("bmx7-json") then
 		uci:set(bmx7.f, "json", "plugin")
 		uci:set(bmx7.f, "json", "plugin", "bmx7_json.so")
+	end
+
+	-- Enable topology plugin to get netjson file
+	if utils.is_installed("bmx7-topology") then
+		uci:set(bmx7.f, "topology", "plugin")
+		uci:set(bmx7.f, "topology", "plugin", "bmx7_topology.so")
 	end
 
 	-- Enable iwinfo plugin to get better link bandwidth estimation
@@ -60,8 +66,10 @@ function bmx7.configure(args)
 	end
 
 	-- Enable SMS plugin to enable sharing of small files
-	uci:set(bmx7.f, "sms", "plugin")
-	uci:set(bmx7.f, "sms", "plugin", "bmx7_sms.so")
+	if utils.is_installed("bmx7-sms") then
+		uci:set(bmx7.f, "sms", "plugin")
+		uci:set(bmx7.f, "sms", "plugin", "bmx7_sms.so")
+	end
 
 	-- Enable tun plugin, DISCLAIMER: this must be positioned before table plugin if used.
 	uci:set(bmx7.f, "ptun", "plugin")
@@ -129,6 +137,11 @@ function bmx7.configure(args)
 		elseif(proto == "batadv") then hasBatadv = true end
 	end
 
+	if config.get("network", "bmx7_over_librenet6", false) then
+		uci:set("bmx7", "librenet6", "dev")
+		uci:set("bmx7", "librenet6", "dev", "librenet6")
+	end
+
 	if(hasLan) then
 		uci:set("bmx7", "lm_net_br_lan", "dev")
 		uci:set("bmx7", "lm_net_br_lan", "dev", "br-lan")
@@ -177,7 +190,7 @@ function bmx7.setup_interface(ifname, args)
 		( ifname:match("^wlan%d+.ap") or ifname:match("^eth%d+") )
 	then return end
 
-	vlanId = args[2] or 13
+	vlanId = args[2] or 18
 	vlanProto = args[3] or "8021ad"
 	nameSuffix = args[4] or "_bmx7"
 
